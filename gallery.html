@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23764f783c.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+    <div class="header-container-index">
+
+        <header>
+
+            <div class="logo">
+                <a href="index.html">No Name Yet</a>
+            </div>
+
+            <div>
+                <a href="index.html" class="navbutton">HOME</a>
+                <a href="about.html" class="navbutton">ABOUT</a>
+                <a href="gallery.html" class="navbutton">GALLERY</a>
+                <a href="live.html" class="navbutton">LIVE</a>
+            </div>
+
+            <!-- <div class="cards">
+                <div class="card1">
+                    <a href="https://www.facebook.com/thomasmayer86/" class="facebook" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+        
+        
+                <div class=></div>
+                    <a href="https://www.instagram.com/klettwandel/" class="facebook" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div> -->
+
+        </header>
+
+    </div>
+
+
+
+
+
+    <main>
+
+        <!-- VIDEOS -->
+
+        <div class="title">
+            <h1>Gallery</h1>
+        </div>
+        
+        <div class="gallerycontainer">
+            <audio src="STE-098.wav" controls></audio>
+        </div>
+
+
+
+
+
+
+<!-- IMAGE  MODALS -->
+
+        <div class="gallerycontainer">
+
+        <div class="modalcontainer">            
+            <img class="myImg" src="images/standing.jpg" alt="Der neue Mensch"
+                width="800" height="520">
+        </div>
+
+        <div class="center"><img  src="images/gifdesk" alt=""/></div>
+        
+        <div class="modalcontainer">            
+            <img class="myImg" src="images/lights.jpg" alt="illuminated"
+                width="800" height="520">
+        </div>
+
+        <div class="modalcontainer">
+            <img class="myImg" src="images/plinth.jpg" alt="displaying work"
+                width="400" height="260">
+            <img class="myImg" src="images/painting.jpg" alt="engaging with art"
+                width="400" height="260">
+            <img class="myImg" src="images/tarot.jpg" alt="tarot reading"
+                width="400" height="260">
+            <img class="myImg" src="images/couple.jpg" alt="three"
+                width="400" height="260">
+        </div>
+                
+        <div class="center"><img  src="images/giffrank" alt=""/></div>
+                
+        <div class="modalcontainer">        
+            <img class="myImg" src="images/tunnel.jpg" alt="a few trips to the local developer"
+                width="400" height="260">
+            <img class="myImg" src="images/tom.jpg" alt="audio"
+                width="400" height="260">
+            <img class="myImg" src="images/statue.jpg" alt="mimicry"
+                width="400" height="260">
+            <img class="myImg" src="images/ticket.jpg" alt="9 euro ticket"
+                width="400" height="260">
+        </div>
+
+        <div class="center"><img  src="images/gifpainting" alt=""/></div>
+
+        <div class="modalcontainer">        
+            <img class="myImg" src="images/michelle.jpg" alt="a visit from Michelle Madsen"
+                width="400" height="260">
+            <img class="myImg" src="images/statue2.jpg" alt="friends"
+                width="400" height="260">
+            <img class="myImg" src="images/lights2.jpg" alt="curious"
+                width="400" height="260">
+            <img class="myImg" src="images/standing2.jpg" alt="alone"
+                width="400" height="260">
+        </div>
+
+
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/yJc5BGni_oA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<!-- AUDIOMACK EMBEDDED SOUND -->
+
+<!--        </div>-->
+
+<!--        <div class="title">-->
+<!--            <h2>Sound</h2>-->
+<!--        </div>-->
+
+
+<!--        <div class="container">-->
+
+<!--            <iframe src="https://audiomack.com/embed/song/klett-wandel/country-boy?background=1" scrolling="no"-->
+<!--                width="100%" height="252" scrollbars="no" frameborder="0"></iframe>-->
+
+<!--        </div>-->
+
+<!--    </main>-->
+
+
+
+
+
+<!-- FOOTER -->
+
+        <div class="footerlinks">
+            <div class="footerlink1">
+                <a href="https://www.facebook.com/thomasmayer86/" class="facebook" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+    
+    
+            <div class="footerlink2">
+                <a href="https://www.instagram.com/klettwandel/" class="facebook" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+
+
+</body>
+
+
+
+
+
+
+<!-- JAVASCRIPT MODALS -->
+
+<script>
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementsByClassName('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    var showModal = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    for (var i = 0; i < img.length; i++) {
+        img[i].addEventListener('click', showModal);
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+</script>
+
+
+
+</html>
